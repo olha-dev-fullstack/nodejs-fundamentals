@@ -3,10 +3,10 @@ const { performance } = require("perf_hooks");
 
 process.title = "node-rs";
 
-// 1 minute to handle 5 million requests
+// 1 minute to handle 5 thousand requests
 
 const THREADS = 4;
-const count = 5_000_000;
+const count = 5_000;
 let completed = 0;
 
 for (let i = 0; i < THREADS; i++) {
